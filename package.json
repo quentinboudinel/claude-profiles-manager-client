@@ -1,0 +1,36 @@
+{
+  "name": "claude-profiles-manager-client",
+  "version": "0.1.0",
+  "description": "cpm — manage, switch, and sync Claude Code profiles across machines",
+  "bin": {
+    "cpm": "./src/cli.ts"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "type": "module",
+  "module": "src/cli.ts",
+  "scripts": {
+    "cpm": "bun run src/cli.ts",
+    "build": "bun build ./src/cli.ts --compile --outfile dist/cpm",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "@commitlint/types": "^19.0.0",
+    "@types/bun": "latest",
+    "lefthook": "^1.7.0",
+    "oxfmt": "^0.60.0",
+    "oxlint": "^1.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
