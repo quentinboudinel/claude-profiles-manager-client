@@ -1,6 +1,6 @@
 {
   "name": "claude-profiles-manager-client",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "cpm — manage, switch, and sync Claude Code profiles across machines",
   "bin": {
     "cpm": "./src/cli.ts"
